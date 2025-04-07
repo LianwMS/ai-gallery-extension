@@ -3,12 +3,11 @@ resources:
   - repository: ai-gallery-extension
     type: github
     name: microsoft/ai-gallery-extension
-    endpoint: github.codetocloud
+    endpoint: github.com_LianwMS
 
 extends: # Extend the template in your YAML
   template: azure-pipelines/MicroBuild.1ES.Official.yml@CustomPipelineTemplates
   parameters:
-    oneESTemplateTag: ${{ parameters.oneESTemplateTag }}
     pool: # This example is for Windows, but Mac/Linux are also supported.
       name: VSEngSS-MicroBuild2022-1ES
       demands:
